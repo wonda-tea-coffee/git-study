@@ -39,9 +39,10 @@ author: wonda-tea-coffee
 
 ---
 
-### 用語
+### [WIP]用語
 
 - ステージ
+- ワーキングツリー
 
 ---
 
@@ -51,11 +52,7 @@ author: wonda-tea-coffee
 
 ```sh
 $ git switch develop
-```
-
-または
-
-```
+# または
 $ git checkout develop
 ```
 
@@ -63,11 +60,7 @@ $ git checkout develop
 
 ```sh
 $ git switch -c fix-bug develop
-```
-
-または
-
-```
+# または
 $ git checkout -b fix-bug develop
 ```
 
@@ -91,13 +84,13 @@ switchはcheckoutから一部機能を切り出す形で誕生したサブセッ
 - ファイル単位
 
 ```sh
-$ git add foo.txt
+$ git add outline.md
 ```
 
 - ディレクトリ単位
 
 ```sh
-git add lib/
+$ git add images/
 ```
 
 ---
@@ -108,7 +101,40 @@ git add lib/
 これに慣れてしまうと何をステージ・コミットするかを意識しなくなるため、
 1つのコミットが大きくなったり、機密情報をコミットするリスクが高まります。
 
-代わりに前述の `git add foo.txt` のように特定ファイルのみをステージする癖を付けましょう。
+代わりに前述の `git add outline.md` のように特定ファイルのみをステージする癖を付けましょう。
+
+---
+
+### 変更を元に戻す
+
+- ファイルの変更を破棄する
+
+```sh
+$ git restore --worktree outline.md
+# または
+$ git restore outline.md
+# または
+$ git checkout -- outline.md
+```
+
+- ステージを取り消す
+
+```sh
+$ git restore --staged outline.md
+# または
+$ git checkout HEAD -- outline.md
+```
+
+---
+
+### checkoutとrestoreのどちらを使うべきか
+
+どちらでもいいです。
+
+ただしrestoreは実験的なコマンドであるため、その動作は今後変わる可能性があることに注意しましょう。
+https://git-scm.com/docs/git-restore/2.45.2
+
+restoreはcheckoutから一部機能を切り出す形で（以下略）
 
 ---
 
