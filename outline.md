@@ -39,10 +39,26 @@ author: wonda-tea-coffee
 
 ---
 
-### [WIP]用語
+### Gitコンポーネント
 
-- ステージ
-- ワーキングツリー
+- Gitサーバー
+  - Gitリポジトリのホスティングプラットフォーム
+    - ex. GitHub, GitLab
+- Gitクライアント
+  - Gitコマンドライン
+    - 今回のメインコンテンツ
+    - 単にGitと言う場合これを指す
+  - Git GUIツール
+    - ex. Sourcetree
+
+---
+
+### バージョンの確認
+
+```sh
+$ git --version
+git version 2.45.2
+```
 
 ---
 
@@ -79,7 +95,9 @@ switchはcheckoutから一部機能を切り出す形で誕生したサブセッ
 
 ---
 
-### 変更をステージする
+### 変更をステージングする
+
+ステージングとは、コミットによってスナップショットを撮る準備段階のこと。
 
 - ファイル単位
 
@@ -107,7 +125,7 @@ $ git add images/
 
 ### 変更を元に戻す
 
-- ファイルの変更を破棄する
+- 作業ディレクトリの変更を破棄する
 
 ```sh
 $ git restore --worktree outline.md
@@ -117,7 +135,7 @@ $ git restore outline.md
 $ git checkout -- outline.md
 ```
 
-- ステージを取り消す
+- ステージングを取り消す
 
 ```sh
 $ git restore --staged outline.md
@@ -135,6 +153,25 @@ $ git checkout HEAD -- outline.md
 https://git-scm.com/docs/git-restore/2.45.2
 
 restoreはcheckoutから一部機能を切り出す形で（以下略）
+
+---
+
+### コミット
+
+```sh
+$ git commit -m "awesome commit message"
+```
+
+---
+
+### 変更をリモートリポジトリに反映させる
+
+```sh
+$ git push origin add-awesome-feature
+```
+
+- 通常リモートリポジトリの参照は `git clone` 時に `origin` として追加されている
+  - `git remote` で確認できる
 
 ---
 
