@@ -159,6 +159,7 @@ restoreはcheckoutから一部機能を切り出す形で（以下略）
 ### コミット
 
 ```sh
+# 最も基本的な使い方
 $ git commit -m "awesome commit message"
 ```
 
@@ -167,19 +168,24 @@ $ git commit -m "awesome commit message"
 ### 変更をリモートリポジトリに反映させる
 
 ```sh
+# 最も基本的な使い方
+# リモートリポジトリに add-awesome-feature ブランチがあれば更新
+# なければ作成する
 $ git push origin add-awesome-feature
 ```
 
 - 通常リモートリポジトリの参照は `git clone` 時に `origin` として追加されている
-  - `git remote` で確認できる
+  - リモートリポジトリの参照名は `git remote` で確認できる
+- `git push` のように引数を省略をした場合の挙動については複雑であるため、今回の解説対象外にします
 
 ---
 
 ### Gitの操作に困ったら
 
-- `git help -a`
-- `git [command] -h`
-  - ex. `git branch -h`
+- ドキュメントを読む
+  - https://git-scm.com/docs/git
+  - `git help -a`
+  - `git [command] -h`
 - 「git [command] 使い方」でググる
 
 ---
@@ -214,8 +220,11 @@ $ git push origin add-awesome-feature
 
 ## 熟達のヒント
 
-- 自分の使う道具をよく知ろう
-  - ex. コマンドのヘルプを読む
+- コマンドのヘルプを読む
+- ソースコードを読む
+  - https://github.com/git/git
+- システムコールを追いかける
+  - ex. strace
 
 ---
 
