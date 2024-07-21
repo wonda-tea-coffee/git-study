@@ -218,6 +218,7 @@ $ git push origin add-awesome-feature
 ## 熟達のヒント
 
 - コマンドのヘルプを読む
+- git configの設定
 - ソースコードを読む
   - https://github.com/git/git
 - システムコールを追いかける
