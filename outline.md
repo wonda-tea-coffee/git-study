@@ -143,12 +143,10 @@ $ git checkout HEAD -- outline.md
 
 ### checkoutとrestoreのどちらを使うべきか
 
-どちらでもいいです。
+作業状態の復元をする分にはどちらでもいいです。
 
 ただしrestoreは実験的なコマンドであるため、その動作は今後変わる可能性があることに注意しましょう。
 https://git-scm.com/docs/git-restore/2.45.2
-
-restoreはcheckoutから一部機能を切り出す形で（以下略）
 
 ---
 
