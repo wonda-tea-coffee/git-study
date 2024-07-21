@@ -179,6 +179,8 @@ $ git push origin add-awesome-feature
 
 ### リモートリポジトリの変更をローカルリポジトリに反映させる
 
+TODO: `git fetch` と `git merge` について書く
+
 ---
 
 ### 作業状態を退避させる
