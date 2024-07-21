@@ -84,14 +84,10 @@ $ git checkout -b fix-bug develop
 
 ### checkoutとswitchのどちらを使うべきか
 
-ブランチのみを扱う分にはどちらでもいいです。
+ブランチ操作を扱う分にはどちらでもいいです。
 
 ただしswitchは実験的なコマンドであるため、その動作は今後変わる可能性があることに注意しましょう。
 https://git-scm.com/docs/git-switch/2.45.2
-
-switchはcheckoutから一部機能を切り出す形で誕生したサブセットです。
-そのため、checkoutにできてswitchにできないことがいくつか存在します。
-例えばswitchはタグやコミットに移動できません。
 
 ---
 
