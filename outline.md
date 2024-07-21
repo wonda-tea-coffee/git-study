@@ -247,6 +247,30 @@ $ git rebase -i HEAD~3
 
 ---
 
+### コンフリクトの解消ハンズオン
+
+```sh
+[main]$ echo "version: 1" > README.md
+[main]$ git add README.md
+[main]$ git commit -m "add README.md(in main)"
+
+[feat]$ git switch -c feat main
+[feat]$ echo "version: 2" > README.md
+[feat]$ git commit -am "fix README.md(in feat)"
+
+[main]$ git switch main
+[main]$ echo "version: 3" > README.md
+[main]$ git commit -am "fix README.md(in main)"
+
+[feat]$ git switch feat
+[feat]$ git merge main
+# コンフリクトの解消
+[feat]$ git add README.md
+[feat]$ git merge --continue
+```
+
+---
+
 ### Gitの操作に困ったら
 
 - ドキュメントを読む
