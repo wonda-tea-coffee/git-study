@@ -155,6 +155,9 @@ https://git-scm.com/docs/git-restore/2.45.2
 ```sh
 # 最も基本的な使い方
 $ git commit -m "awesome commit message"
+# コミットメッセージは複数行書いても良い
+# デフォルトではvimが採用される
+$ git commit
 ```
 
 ---
