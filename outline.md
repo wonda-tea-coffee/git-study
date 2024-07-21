@@ -230,6 +230,14 @@ $ git log --reverse
 
 ---
 
+### 変更を取り消す
+
+```sh
+$ git revert [commit]
+```
+
+---
+
 ### Gitの操作に困ったら
 
 - ドキュメントを読む
