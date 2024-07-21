@@ -216,6 +216,20 @@ $ git cherry-pick [commit]
 
 ---
 
+### 変更履歴を探す
+
+```sh
+$ git log
+# 変更されたコードも出力する
+$ git log -p
+# 特定のファイルパターンの履歴に絞る
+$ git log -- README.md
+# 逆順にもできる
+$ git log --reverse
+```
+
+---
+
 ### Gitの操作に困ったら
 
 - ドキュメントを読む
