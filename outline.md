@@ -173,13 +173,32 @@ $ git push origin add-awesome-feature
 
 - 通常リモートリポジトリの参照は `git clone` 時に `origin` として追加されている
   - リモートリポジトリの参照名は `git remote` で確認できる
-- `git push` のように引数を省略をした場合の挙動については複雑であるため、今回の解説対象外にします
 
 ---
 
-### リモートリポジトリの変更をローカルリポジトリに反映させる
+### リモートリポジトリの変更をローカルリポジトリに反映させる(git fetch編)
 
-TODO: `git fetch` と `git merge` について書く
+リモート追跡ブランチ(※)の一覧を `git fetch` の前後で確認する。
+※事前にGitHub上でブランチ fetch-test を作成しておく。
+
+```sh
+$ git branch -r
+  origin/main
+$ git fetch
+From https://github.com/wonda-tea-coffee/git-study
+ * [new branch]      fetch-test -> origin/fetch-test
+$ git branch -r
+  origin/fetch-test
+  origin/main
+```
+
+※リモート追跡ブランチ・・・リモートの変更を追跡するためのブランチ
+
+---
+
+### リモートリポジトリの変更をローカルリポジトリに反映させる(git merge編)
+
+TODO
 
 ---
 
