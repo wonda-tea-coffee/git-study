@@ -340,3 +340,11 @@ $ git rebase -i HEAD~3
 ---
 
 ## 質問タイム
+
+---
+
+## 小ネタ
+
+- main？master？
+
+---
