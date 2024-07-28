@@ -128,7 +128,7 @@ $ git restore --worktree outline.md
 # または
 $ git restore outline.md
 # または
-$ git checkout -- outline.md
+$ git checkout outline.md
 ```
 
 - ステージを取り消す
@@ -136,7 +136,7 @@ $ git checkout -- outline.md
 ```sh
 $ git restore --staged outline.md
 # または
-$ git checkout HEAD -- outline.md
+$ git checkout outline.md
 ```
 
 ---
