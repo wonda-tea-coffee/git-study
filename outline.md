@@ -176,7 +176,7 @@ $ git push origin add-awesome-feature
 
 ---
 
-### リモートリポジトリの変更をローカルリポジトリに反映させる(git fetch編)
+### リモートリポジトリの変更をダウンロードする
 
 リモート追跡ブランチ(※)の一覧を `git fetch` の前後で確認する。
 ※事前にGitHub上でブランチ fetch-test を作成しておく。
