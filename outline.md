@@ -271,6 +271,10 @@ $ git rebase -i HEAD~3
 
 ---
 
+## 快適にGitを使うためのTips
+
+---
+
 ### Gitの操作に困ったら
 
 - ドキュメントを読む
@@ -278,10 +282,6 @@ $ git rebase -i HEAD~3
   - `git help -a`
   - `git [command] -h`
 - 「git [command] 使い方」でググる
-
----
-
-## 快適にGitを使うためのTips
 
 ---
 
