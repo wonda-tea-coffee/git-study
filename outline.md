@@ -91,7 +91,7 @@ https://git-scm.com/docs/git-switch/2.45.2
 
 ---
 
-### 変更をステージングする
+### 変更をステージする
 
 ステージングとは、コミットによってスナップショットを撮る準備段階のこと。
 
@@ -131,7 +131,7 @@ $ git restore outline.md
 $ git checkout -- outline.md
 ```
 
-- ステージングを取り消す
+- ステージを取り消す
 
 ```sh
 $ git restore --staged outline.md
